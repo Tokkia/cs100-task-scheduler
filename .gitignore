@@ -1,0 +1,11 @@
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+lib/
+taskManager
+tests/googletest/generated/GTestConfigVersion.cmake
+tests/googletest/generated/gtest.pc
+tests/googletest/generated/gtest_main.pc
+test
+runTest
