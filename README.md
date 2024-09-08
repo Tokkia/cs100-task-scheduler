@@ -12,11 +12,11 @@ This program is not only practical for students, but also for working profession
   In order to use this program you must:
   1. Download all files in the github repository
   2. Run 
-  > g++ src/main.cpp src/Grocery.cpp src/School.cpp src/Social.cpp src/Task.cpp src/TaskManager.cpp src/Work.cpp -o taskManager 
+  ``` g++ src/main.cpp src/Grocery.cpp src/School.cpp src/Social.cpp src/Task.cpp src/TaskManager.cpp src/Work.cpp -o taskManager ```
   in the terminal
   3. Run 
-  > ./taskManager 
-  in the terminal.
+  ```./taskManager ```
+  in the terminal
 
 ## 3 Demonstration
 ### 3.1 Features and Functionality
