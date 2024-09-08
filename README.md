@@ -1,18 +1,22 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=9911954&assignment_repo_type=AssignmentRepo)
-# \Task scheduler
- 
-Authors: [Sean Chang](https://github.com/PeachesSmasher)
-Authors: [William Dang](https://github.com/williamDini)
-Authors: [Lillian Xiao](https://github.com/Tokkia)
-Authors: [Shawn Hwang](https://github.com/ShawnHwang1)
 
-Why is it important or interesting to you? 
-    From balancing school to extracurricular activities, students live busy lives. As students, we feel this in our day to day and decided to do something about it. This program is not only practical but useful for students and working professionals in their everyday life. 
+# Task scheduler
+## 1 Introduction
+### 1.1 Purpose
+From balancing school to extracurricular activities, students live busy lives. As students, we feel this in our day to day and decided to do something about it. This project creates a simple, intuitive way for tasks to be scheduled and displayed. 
 
-What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
-    We are planning to implement the project using C++. 
 
-What will be the input/output of your project?
+### 1.2 Target Audience
+This program is not only practical for students, but also for working professionals in their everyday life. 
+
+## 2 Installation/Quick Start Guide
+  In order to use this program you must:
+  1. Download all files in the github repository
+  2. Run g++ src/main.cpp src/Grocery.cpp src/School.cpp src/Social.cpp src/Task.cpp src/TaskManager.cpp src/Work.cpp -o taskManager in the terminal
+  3. Run ./taskManager in the terminal.
+
+## 3 Demonstration
+### 3.1 Features and Functionality
+Input/Output of Project:
     Input: Numbers based on instructions
         1) Add task
         2) Delete task
@@ -21,15 +25,30 @@ What will be the input/output of your project?
         5) Display all tasks(Day, month, all)
     Output: outputs task assigned to specific numbers
 
-What are the features that the project provides?
+Features of Project:
     1)Create task - title, optional: description, tag (make an option to create your own tag), priority of the tasks, optional: duration, due date, completion (add-on of delete task, prints completed when done)
     2)Create a task list where each list includes multiple tasks (subtasks within the main task)
     3)Display (displays the tasks when prompted, by day, month, all)
     4)Edit (edits the tasks, prompts for options to move priority, delete, change date, etc etc.
     5)Delete tasks and task lists. Will also undo the operation
 
-## Class Diagram
-hthttps://github.com/cs100/final-project-leetcodelemons/blob/320205f99faa11ef80717345a59752950df496cf/UML%20Diagram.drawio%20(1).png
+### 3.2 Visual Demonstration
+  All Inputs: https://github.com/cs100/final-project-leetcodelemons/blob/215917f52289b1a04cf66cacbea3c9ba1896aa5a/inputs.png
+ 
+  Output of addTask: https://github.com/cs100/final-project-leetcodelemons/blob/215917f52289b1a04cf66cacbea3c9ba1896aa5a/addTask.png
+ 
+  Output of delete task: https://github.com/cs100/final-project-leetcodelemons/blob/215917f52289b1a04cf66cacbea3c9ba1896aa5a/deleteTask.png
+ 
+  Output of editTask: https://github.com/cs100/final-project-leetcodelemons/blob/215917f52289b1a04cf66cacbea3c9ba1896aa5a/editTask.png
+
+  Output of Change Priority: https://github.com/cs100/final-project-leetcodelemons/blob/215917f52289b1a04cf66cacbea3c9ba1896aa5a/changePriority.png
+  
+  Output of Display Chosen: https://github.com/cs100/final-project-leetcodelemons/blob/215917f52289b1a04cf66cacbea3c9ba1896aa5a/displayChosen.png
+  
+  Output of quit: https://github.com/cs100/final-project-leetcodelemons/blob/215917f52289b1a04cf66cacbea3c9ba1896aa5a/quit.png
+
+## 3.3 Class Diagram
+https://github.com/cs100/final-project-leetcodelemons/blob/320205f99faa11ef80717345a59752950df496cf/UML%20Diagram.drawio%20(1).png
  
 The task manager class is composed of the task class. The task manager contains a vector of tasks. In the class derived from task manager named “task” we use the composition arrow to link the two classes. This is because of its nature being having a strong ownership between 2 classes when one class is a part of another. 
 
@@ -60,23 +79,20 @@ GROCERY: By adding the type grocery, we allow the user to label tasks related to
 
 WORK: By adding the type work, we allowed for the user to label tasks related to work with WORK, this gave the ability to add a time for work shifts, a time for designated breaks, and also a vacation time.
  
-
- ## Screenshots
-  All Inputs: https://github.com/cs100/final-project-leetcodelemons/blob/215917f52289b1a04cf66cacbea3c9ba1896aa5a/inputs.png
  
-  Output of addTask: https://github.com/cs100/final-project-leetcodelemons/blob/215917f52289b1a04cf66cacbea3c9ba1896aa5a/addTask.png
- 
-  Output of delete task: https://github.com/cs100/final-project-leetcodelemons/blob/215917f52289b1a04cf66cacbea3c9ba1896aa5a/deleteTask.png
- 
-  Output of editTask: https://github.com/cs100/final-project-leetcodelemons/blob/215917f52289b1a04cf66cacbea3c9ba1896aa5a/editTask.png
-
-  Output of Change Priority: https://github.com/cs100/final-project-leetcodelemons/blob/215917f52289b1a04cf66cacbea3c9ba1896aa5a/changePriority.png
-  
-  Output of Display Chosen: https://github.com/cs100/final-project-leetcodelemons/blob/215917f52289b1a04cf66cacbea3c9ba1896aa5a/displayChosen.png
-  
-  Output of quit: https://github.com/cs100/final-project-leetcodelemons/blob/215917f52289b1a04cf66cacbea3c9ba1896aa5a/quit.png
- ## Installation/Usage
-  In order to use this program you must download all files in the github repository, and then run ./taskManager in the terminal.
- ## Testing
+## 4 Testing
   This program was tested using the C++ googletest suite.
+  
+## 5 Contributing
+Authors: [Lillian Xiao](https://github.com/Tokkia)
+Authors: [Sean Chang](https://github.com/PeachesSmasher)
+Authors: [William Dang](https://github.com/williamDini)
+Authors: [Shawn Hwang](https://github.com/ShawnHwang1)
+
+## 6 Contact
+Email: lillian.xiao.official@gmail.com
+
+
+
+ 
  
